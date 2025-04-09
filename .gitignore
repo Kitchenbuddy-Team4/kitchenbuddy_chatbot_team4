@@ -1,0 +1,66 @@
+# === Python Bytecode ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.log
+
+# === Virtual Environments ===
+.venv/
+venv/
+
+# === Environment Variables & Secrets ===
+.env
+*.env
+secrets.json
+config.json
+
+# === PyCharm ===
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# === VS Code (if used) ===
+.vscode/
+
+# === OS-Specific Junk ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === Test Reports ===
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# === Jupyter Notebooks (if used) ===
+.ipynb_checkpoints/
+
+# === Node/Frontend (if React is part of the project) ===
+node_modules/
+npm-debug.log
+yarn-error.log
+*.lock
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Build/Dist Artifacts (Optional) ===
+build/
+dist/
+*.bak
+*.tmp
+*.swp
+
+# === Resources ===
+resources/dataset/
