@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify
 import requests
 import nltk
 from nltk.tokenize import word_tokenize
+from services.chatbot_service import chatbot_bp
 
 nltk.download("punkt")
 
 app = Flask(__name__)
+app.register_blueprint(chatbot_bp)
 
 # SPRING_BACKEND_URL = "http://localhost:8080/api/recipes"  # Update this based on your API
 
