@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de5aa383-e772-4c85-bd57-8c750106c276" name="Changes" comment="">
+    <list default="true" id="de5aa383-e772-4c85-bd57-8c750106c276" name="Changes" comment="Setup training data">
       <change afterPath="$PROJECT_DIR$/utilities/chatbot.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utilities/intent_classifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -89,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743562446905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup training data">
+      <option name="closed" value="true" />
+      <created>1744222306019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744222306019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialized python flask server" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialized python flask server" />
+    <MESSAGE value="Setup training data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup training data" />
   </component>
 </project>
