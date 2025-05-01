@@ -61,7 +61,7 @@ for epoch in range(n_epochs):
     print(f"Epoch {epoch + 1}/{n_epochs} | Loss: {avg_loss:.4f}")
 
 # === Step 5: Save Model and Metadata ===
-torch.save(model, os.path.join(save_dir, "intent_model_full.pth"))
+torch.save(model.state_dict(), os.path.join(save_dir, "intent_model_state.pth"))
 
 with open(os.path.join(save_dir, "vocab.json"), "w") as f:
     json.dump(vocab, f)
