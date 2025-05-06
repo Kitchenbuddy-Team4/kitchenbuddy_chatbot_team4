@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5aa383-e772-4c85-bd57-8c750106c276" name="Changes" comment="completed intent classifier for chatbot">
-      <change afterPath="$PROJECT_DIR$/utilities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/intents/intents_uncle_cheffington.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/intents/intents_uncle_cheffington.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/chatbot_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/chatbot_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/data_cleaning/list_of_ingredients.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/data_cleaning/list_of_ingredients.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/intent_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/intent_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/model/intent_model_full.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/model/vocab.json" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/model/vocab.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ingredients/unique_ingredients.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ingredients/unique_ingredients.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="development" />
+        <entry key="$PROJECT_DIR$" value="chatbot/chatbot-interaction" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,19 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "Python.chatbot_service.executor": "Run",
-    "Python.clean_ingredients.executor": "Run",
-    "Python.intent_classifier.executor": "Debug",
-    "Python.list_of_ingredients.executor": "Run",
-    "Python.train.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "chatbot/chatbot-interaction",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chatbot_service.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clean_ingredients.executor&quot;: &quot;Run&quot;,
+    &quot;Python.intent_classifier.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.list_of_ingredients.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\USCB CSCI\SEM 8\Software System Design\Projects\kitchenbuddy_chatbot_team4\src" />
