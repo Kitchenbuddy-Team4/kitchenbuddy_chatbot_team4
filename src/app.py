@@ -1,9 +1,12 @@
-from flask import Flask, request, jsonify
-import requests
-import nltk
-from nltk.tokenize import word_tokenize
-from services.chatbot_service import chatbot_bp
+import sys
 import os
+
+# Add the parent directory to sys.path so 'services' can be found
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'services'))
+
+from flask import Flask, request, jsonify
+import nltk
+from services.chatbot_service import chatbot_bp  # Import after adding services to sys.path
 
 nltk.download("punkt")
 
