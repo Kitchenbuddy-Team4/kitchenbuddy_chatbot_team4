@@ -33,7 +33,7 @@ murmurhash==1.0.12
 namex==0.0.8
 networkx==3.4.2
 nltk==3.9.1
-numpy==1.23.5  # Updated version compatible with pandas, spacy, and thinc
+numpy>=1.21,<2.0  # Loosen numpy version range
 optree==0.15.0
 packaging==24.2
 pandas==2.2.3
