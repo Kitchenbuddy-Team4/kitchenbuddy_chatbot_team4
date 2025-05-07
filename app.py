@@ -4,6 +4,7 @@ import requests
 import spacy
 import torch
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 import nltk
 from intent_net import IntentNet  # Ensure this import works
 
@@ -12,6 +13,9 @@ nltk.download("punkt")
 
 # === Initialize Flask App ===
 app = Flask(__name__)
+
+# Enable CORS for only the specified origin
+CORS(app, origins=["https://kitchenbuddy-team4.netlify.app"])
 
 # Health Check Route
 @app.route("/health", methods=["GET"])
