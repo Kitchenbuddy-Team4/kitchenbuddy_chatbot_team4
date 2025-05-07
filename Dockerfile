@@ -18,4 +18,4 @@ RUN python -m spacy download en_core_web_sm
 EXPOSE 5000
 
 # Command to run the Flask app
-CMD ["python", "src/app.py"]
+CMD ["python", "app.py"]
