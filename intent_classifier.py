@@ -2,7 +2,7 @@
 import spacy
 import json
 import torch
-from utilities.intent_net import IntentNet
+from intent_net import IntentNet
 from torch.serialization import safe_globals
 
 
@@ -17,7 +17,7 @@ class IntentClassifier:
         if not hasattr(self, 'model'):
             # Safely load the full model
             with safe_globals({"IntentNet": IntentNet}):
-                self.model = torch.load("../utilities/model/intent_model_full.pth", weights_only=False)
+                self.model = torch.load("model/intent_model_full.pth", weights_only=False)
 
             self.model.eval()
 
