@@ -1,21 +1,22 @@
-# Use the official Python image from Docker Hub
-FROM python:3.11-slim
+# Use an official lightweight Python image
+FROM python:3.10-slim
 
-# Set the working directory inside the container
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Set working directory
 WORKDIR /app
 
-# Copy all files from the current directory to the /app directory in the container
-COPY . /app/
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install required Python packages
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Copy all source code
+COPY . .
 
-# Download the SpaCy model
-RUN python -m spacy download en_core_web_sm
+# Expose the port that Flask/Gunicorn will run on
+EXPOSE 8080
 
-# Expose the port your app runs on
-EXPOSE 5000
-
-# Command to run the Flask app
-CMD ["python", "app.py"]
+# Start Flask app using gunicorn
+CMD ["gunicorn", "src.app:app", "--bind", "0.0.0.0:8080"]
