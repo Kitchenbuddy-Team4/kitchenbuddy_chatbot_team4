@@ -20,7 +20,7 @@ RUN python -m spacy download en_core_web_sm
 COPY . .
 
 # Expose the port that Flask/Gunicorn will run on
-EXPOSE 8080
+EXPOSE 5000
 
 # Start Flask app using gunicorn
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8080"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
