@@ -5,3 +5,4 @@ spacy==3.8.5
 torch==2.0.0
 pandas==2.2.3
 spacy
+gunicorn
