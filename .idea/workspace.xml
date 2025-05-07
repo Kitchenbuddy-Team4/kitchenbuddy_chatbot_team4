@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5aa383-e772-4c85-bd57-8c750106c276" name="Changes" comment="completed intent classifier for chatbot">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/chatbot_service.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/intent_model_state.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/data_cleaning/clean_ingredients.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning/clean_ingredients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/data_cleaning/list_of_ingredients.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning/list_of_ingredients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/intent_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/intent_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/intent_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/intent_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/intent_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/intent_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/model/intent_model_state.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/model/labels.json" beforeDir="false" afterPath="$PROJECT_DIR$/model/labels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/model/vocab.json" beforeDir="false" afterPath="$PROJECT_DIR$/model/vocab.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +76,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\USCB CSCI\SEM 8\Software System Design\Projects\kitchenbuddy_chatbot_team4" />
       <recent name="D:\USCB CSCI\SEM 8\Software System Design\Projects\kitchenbuddy_chatbot_team4\src" />
     </key>
   </component>
@@ -239,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746574374382</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="completed intent classifier for chatbot">
+      <option name="closed" value="true" />
+      <created>1746576160510</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1746576160510</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

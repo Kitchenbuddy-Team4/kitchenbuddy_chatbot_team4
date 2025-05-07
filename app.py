@@ -1,13 +1,11 @@
-import sys
 import os
 import json
 import requests
 import spacy
 import torch
-import torch.nn as nn
 from flask import Flask, request, jsonify
 import nltk
-from utilities.intent_net import IntentNet  # Ensure this import works
+from intent_net import IntentNet  # Ensure this import works
 
 # Download necessary NLTK data
 nltk.download("punkt")
@@ -26,22 +24,22 @@ def home():
     return jsonify({"message": "Welcome to KitchenBuddy API Gateway"}), 200
 
 # === Load Ingredients ===
-with open(os.path.join("..", "resources", "ingredients", "unique_ingredients.json")) as f:
+with open(os.path.join("", "resources", "ingredients", "unique_ingredients.json")) as f:
     all_ingredients = json.load(f)
 
 # === Load Model and Metadata Once ===
 nlp = spacy.load("en_core_web_sm")
 
-with open("../utilities/model/vocab.json", "r") as f:
+with open("model/vocab.json", "r") as f:
     vocab = json.load(f)
 
-with open("../utilities/model/labels.json", "r") as f:
+with open("model/labels.json", "r") as f:
     label_data = json.load(f)
     idx2label = {int(k): v for k, v in label_data["idx2label"].items()}
 
 # Match same architecture used in training
 model = IntentNet(vocab_size=len(vocab), embedding_dim=50, hidden_dim=64, output_dim=len(idx2label))
-model.load_state_dict(torch.load("../utilities/model/intent_model_state.pth", map_location=torch.device("cpu")))
+model.load_state_dict(torch.load("model/intent_model_state.pth", map_location=torch.device("cpu")))
 model.eval()
 
 # === Helper functions ===
